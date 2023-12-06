@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@500&family=Rubik+Moonrocks&display=swap');
+
+.navbar {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+    z-index: 998;
+
+    &.scrolled {
+        background-color: white;
+        -webkit-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+    }
+
+    .navbarContainer {
+        padding: 0px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        background: transparent;
+
+        .left {
+            flex: 1;
+
+            span {
+
+                font-weight: bolder;
+                font-size: 30px;
+            }
+
+        }
+
+        .center {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 20px;
+
+
+            .link {
+                text-decoration: none;
+                font-weight: 700;
+                color: #222;
+            }
+
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+
+            .signup_login {
+                display: none;
+            }
+
+            .signup {
+                cursor: pointer;
+                border-radius: 50rem;
+                border: 0.5px solid white;
+                background-color: transparent;
+                max-width: max-content;
+                padding: 5px 10px;
+                font-size: 15px;
+                font-weight: 700;
+                color: white;
+                transition: all 0.3s;
+
+                &.scroll {
+                    border: 0.5px solid black;
+                    color: black;
+                }
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    -webkit-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                    box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                }
+
+
+            }
+
+            .post {
+                cursor: pointer;
+                border-radius: 50rem;
+                border: 0.5px solid rgb(112, 239, 112);
+                background-color: transparent;
+                max-width: max-content;
+                padding: 5px 10px;
+                font-size: 15px;
+                font-weight: 700;
+                color: rgb(112, 239, 112);
+                transition: all 0.2s;
+
+                &:hover {
+                    background-color: rgb(112, 239, 112);
+                    color: black;
+                    -webkit-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                    box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+                }
+
+                &.scroll {
+                    border: none;
+                    color: black;
+                    background-color: rgb(112, 239, 112);
+                }
+            }
+
+            .navbar_icon {
+                cursor: pointer;
+                display: none;
+
+            }
+
+        }
+    }
+
+}
+
+.dropdown_container {
+
+    display: none;
+    height: 100vh;
+
+
+
+    ul {
+        display: flex;
+
+        gap: 50px;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        padding: 0px;
+
+
+
+        li {
+            list-style: none;
+            padding: 10px 20px !important;
+            border-radius: 20px;
+            // text-align: center;
+            cursor: pointer;
+
+
+            .link {
+                text-decoration: none;
+                font-size: 18px;
+                color: black;
+                font-weight: 700;
+
+
+            }
+
+            &:hover {
+                background-color: #002745;
+
+                .link {
+                    color: white !important;
+                }
+
+            }
+        }
+    }
+
+
+
+
+
+
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+
+
+        .navbarContainer {
+
+
+            .center {
+                display: none;
+
+
+            }
+
+            .right {
+                .signup {
+                    color: black;
+                    border: 1px solid black;
+                }
+
+                .navbar_icon {
+                    display: contents;
+                }
+            }
+        }
+    }
+
+    .dropdown_container {
+        height: 600px;
+        background-color: white;
+        position: absolute;
+
+        z-index: 5;
+        padding: 70px;
+        z-index: 999;
+
+        &.show {
+
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            justify-content: space-around;
+            background-color: white;
+            -webkit-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 17px -17px rgba(0, 0, 0, 0.75);
+
+        }
+
+
+
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        width: 100% !important;
+
+        .navbarContainer {
+
+
+
+            .center {
+
+
+                display: none;
+            }
+
+
+
+            .right {
+                .signup {
+                    display: none;
+                }
+
+                .signup_login {
+                    display: inline;
+                    border: 1px solid black !important;
+                    margin: 0 10px;
+                }
+
+                .post {
+                    display: none;
+                }
+
+                .navbar_icon {
+                    display: contents;
+                }
+            }
+        }
+    }
+}

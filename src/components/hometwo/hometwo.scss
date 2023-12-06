@@ -1,0 +1,71 @@
+.hometwo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .container_hometwo {
+        padding: 100px;
+
+        .top_hometwo {
+            line-height: 15px;
+
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 18px;
+                opacity: .7;
+            }
+        }
+
+        .center_hometwo {
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            margin: 40px 0;
+
+
+            .cardss_hometwo {
+                display: flex;
+                gap: 40px;
+
+                width: 2984px;
+                transition: all 0.4s linear;
+
+
+            }
+
+
+        }
+
+        .bottom_hometwo {
+            margin-top: 50px;
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: center;
+
+
+
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container_hometwo {
+        padding: 50px !important;
+
+        .top_hometwo {
+            line-height: 30px !important;
+
+            h1 {
+                font-size: 30px !important;
+            }
+
+            p {
+                line-height: 20px !important;
+            }
+        }
+    }
+}

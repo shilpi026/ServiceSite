@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@500&family=Rubik+Moonrocks&display=swap');
+
+.dashboard {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e6f0f9;
+    font-family: 'Mulish', sans-serif;
+    width: 100%;
+
+    .dashboard_container {
+        display: flex;
+        width: 100%;
+
+
+        .main {
+            flex: 5;
+
+
+            border-radius: 40px;
+            background-color: white;
+            margin: 20px;
+            margin-top: 98px;
+            margin-left: 300px;
+            padding: 60px 50px;
+            -webkit-box-shadow: -11px 10px 5px -14px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -11px 10px 5px -14px rgba(0, 0, 0, 0.75);
+            box-shadow: -11px 10px 5px -14px rgba(0, 0, 0, 0.75);
+
+            .top_main {
+                line-height: 10px;
+
+                h2 {
+                    font-size: 35px;
+                    font-weight: bold;
+                }
+            }
+
+            .widgets {
+                display: flex;
+                padding: 20px 0;
+                gap: 20px;
+            }
+
+            .chart_container {
+                display: flex;
+                gap: 30px;
+
+                .chart_one,
+                .chart_second {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1190px) {
+    .main {
+        flex: 3;
+
+        .widgets {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .main {
+        margin: 0px !important;
+
+        padding-top: 100px !important;
+
+        .top_main {
+            h2 {
+                font-size: 25px !important;
+            }
+        }
+
+        .widgets {
+            flex-direction: column;
+        }
+
+        .chart_container {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@500&family=Rubik+Moonrocks&display=swap');
+
+.sidebar {
+
+    // flex: 1;
+    height: 100vh;
+    margin-top: 20px;
+    background: transparent;
+    font-family: 'Mulish', sans-serif;
+    padding: 0 32px;
+    margin-top: 98px;
+    position: fixed;
+
+
+    .center {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            line-height: 2;
+
+            .title {
+
+
+
+                color: black;
+
+                margin-bottom: 20px;
+                margin-left: 10px;
+
+            }
+
+            li {
+
+
+                padding: 5px;
+                cursor: pointer;
+                font-size: 18px;
+                color: black;
+                border-radius: 30px;
+                transition: all 0.3s;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-weight: bold;
+                    color: black;
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    background-color: #002745;
+
+
+
+                    span {
+                        color: white;
+                    }
+                }
+
+
+
+
+            }
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .sidebar {
+        display: none;
+
+        &.show_sidebar {
+            display: block !important;
+            background-color: white !important;
+            z-index: 999;
+            margin-top: 0;
+        }
+    }
+}

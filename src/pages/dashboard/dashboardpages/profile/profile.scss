@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@500&family=Rubik+Moonrocks&display=swap');
+
+.dashboard {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e6f0f9;
+    font-family: 'Mulish', sans-serif;
+
+
+    .dashboard_container {
+        display: flex;
+
+        .main {
+            flex: 5;
+            height: max-content;
+
+            border-radius: 40px;
+            background-color: white;
+            margin: 20px;
+            margin-top: 98px;
+            margin-left: 300px;
+            padding: 60px 50px;
+            -webkit-box-shadow: -11px 10px 5px -14px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -11px 10px 5px -14px rgba(0, 0, 0, 0.75);
+            box-shadow: -11px 10px 5px -14px rgba(0, 0, 0, 0.75);
+
+            .top_main {
+                line-height: 10px;
+
+                h2 {
+                    font-size: 35px;
+                    font-weight: bold;
+                }
+            }
+
+            .dashboard_profile_form {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    display: block;
+                    font-size: 10px;
+                    margin-left: 10px;
+                    margin-bottom: 5px;
+
+                }
+
+                input {
+                    width: 60%;
+                    height: 40px;
+                    border: 0.5px solid gray;
+                    border-radius: 20px;
+                    padding: 0 10px;
+                }
+
+                .dashboard_profile_form_input {
+                    display: flex;
+                    width: 60%;
+                    gap: 30px;
+                    margin: 20px 0px;
+
+                    div {
+                        width: 100%;
+
+
+                        input {
+                            // border: none;
+                            width: 100%;
+
+
+                        }
+                    }
+
+                }
+            }
+
+            .about_container {
+                display: flex;
+
+                gap: 30px;
+
+                .about_profile {
+                    textarea {
+                        border: 1px solid gray;
+                        outline: none;
+                        padding: 10px;
+
+                        border-radius: 20px;
+                        width: 90%;
+                        resize: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1190px) {
+    .main {
+        flex: 3;
+
+        .widgets {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .main {
+        margin: 0px !important;
+
+        padding-top: 100px !important;
+
+        .top_main {
+            h2 {
+                font-size: 25px !important;
+            }
+        }
+
+        .dashboard_profile_form {
+            flex-direction: column;
+
+            // width: 70%;
+            input {
+                width: 70%;
+            }
+        }
+
+        .about_container {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .dashboard_profile_form {
+        input {
+            width: 90% !important;
+        }
+
+        .dashboard_profile_form_input {
+
+            flex-direction: column;
+            width: 100% !important;
+
+            input {
+                width: 90% !important;
+            }
+
+
+        }
+    }
+}

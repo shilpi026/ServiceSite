@@ -1,0 +1,103 @@
+.featuredcard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 250px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: white;
+    justify-content: space-between;
+    -webkit-box-shadow: 6px -3px 10px -19px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 6px -3px 10px -19px rgba(0, 0, 0, 1);
+    box-shadow: 6px -3px 10px -19px rgba(0, 0, 0, 1);
+
+
+    .top_featuredcard {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .topTop_featuredcard {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .icon_featuredcard {
+                background-color: #e6f0f9;
+                border-radius: 5px;
+                font-size: 25px;
+                padding: 8px
+            }
+
+            .link_featuredcard {
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+            }
+        }
+
+        .centerTop_featuredcard {
+            font-size: 20px;
+            font-weight: 900;
+
+
+        }
+
+        .bottomTop_featuredcard {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left_bottomTop_featuredcard {
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+            }
+
+            .right_bottomTop_featuredcard {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .bottom_featuredcard {
+        display: flex;
+        justify-content: space-between;
+
+        .leftBottom_featuredcard {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            line-height: 1;
+
+            .date_featuredcard {
+                font-size: 12px;
+            }
+
+            .name_featuredcard {
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+
+        .rightBottom_featuredcard {
+
+
+            img {
+                height: 70px;
+                width: 70px;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .featuredcard {
+        // width: 300px !important;
+    }
+
+}

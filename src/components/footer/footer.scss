@@ -1,0 +1,134 @@
+.footer {
+    background-color: #e6f0f9;
+    // width: 100%;
+    padding: 100px;
+    // height: 60vh;
+
+    .container_footer {
+        display: flex;
+
+        .left_footer {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            gap: 30px;
+
+            .title {
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .call {
+                font-size: 20px;
+                font-weight: 500;
+
+            }
+
+            .number {
+                font-size: 26px;
+                font-weight: 500;
+                color: blue;
+            }
+
+            .address {
+                line-height: 5px;
+            }
+
+        }
+
+        .right_footer {
+            flex: 3;
+            display: flex;
+
+            margin-left: 20px;
+            flex-wrap: nowrap;
+
+
+            .info_box {
+                flex: 1;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 30px;
+
+
+                    li {
+                        list-style: none;
+                        transition: all 0.2s;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: blue;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.bottom_footer {
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon_footer {
+        display: flex;
+
+        span {
+            margin-right: 40px;
+            padding: 10px;
+            background-color: #e6f0f945;
+            border-radius: 20px;
+
+
+
+            a {
+                text-decoration: none;
+                color: black;
+                background: transparent;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 50px 20px !important;
+
+
+        .container_footer {
+            flex-direction: column;
+
+            .left_footer {
+                gap: 10px !important;
+
+                .title {
+                    font-size: 30px !important;
+                }
+
+                .number {
+                    font-size: 25px !important;
+                }
+            }
+
+            .right_footer {
+                margin-left: 0 !important;
+                display: block;
+            }
+        }
+    }
+
+    .bottom_footer {
+        flex-direction: column !important;
+
+        p {
+            text-align: center;
+        }
+    }
+}

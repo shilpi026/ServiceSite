@@ -1,0 +1,117 @@
+.featured {
+    background-color: #fff8ec;
+
+    .container_featured {
+        padding: 100px;
+
+        .top_featured {
+            line-height: 15px;
+            margin-bottom: 40px;
+
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            ;
+        }
+
+        .center_featured {
+
+
+
+            display: flex;
+            align-items: center;
+            align-content: space-around;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+
+
+        }
+
+        .bottom_featured {
+            margin-top: 40px;
+
+            button {
+                border: none;
+                font-size: 20px;
+                background-color: blue;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 20px;
+                width: 10%;
+                transition: all 0.4s ease;
+                cursor: pointer;
+
+
+                &:hover {
+
+                    background-color: #002745;
+                    width: 12%;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    .bottom_featured {
+        display: flex;
+        justify-content: center;
+
+        button {
+            width: 50% !important;
+
+            &:hover {
+                width: 60% !important;
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container_featured {
+        padding: 50px !important;
+
+        .center_featured {
+            justify-content: center !important;
+
+        }
+
+        .top_featured {
+
+            h1 {
+                font-size: 30px !important;
+            }
+
+            p {
+                line-height: 20px;
+                font-size: 18px !important;
+            }
+        }
+
+        .bottom_featured {
+            display: flex;
+            justify-content: center;
+
+            button {
+                width: 50% !important;
+
+                &:hover {
+                    width: 60% !important;
+                }
+
+            }
+
+        }
+    }
+}
